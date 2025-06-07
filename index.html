@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador de Cliques</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: bisque;
+
+    }
+    #contador {
+      font-size: 5em;
+      margin: 20px;
+    }
+    button {
+      font-size: 1.5em;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <h1>Contador de Cliques</h1>
+  <div id="contador">0</div>
+  <button onclick="incrementar()">Clique aqui</button>
+
+  <script>
+    let numero = 0;
+
+    function incrementar() {
+      numero++;
+      document.getElementById("contador").innerText = numero;
+    }
+  </script>
+
+</body>
+</html>
