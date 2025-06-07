@@ -12,15 +12,14 @@
 <body>
 
   <h1>Contadores</h1>
-  <div id="contador">0</div>
-  <button onclick="incrementar()">Clique aqui</button>
+  <button id="botao" onclick="incrementar()">Total 0</button>
 
   <script>
     let numero = 0;
 
     function incrementar() {
       numero++;
-      document.getElementById("contador").innerText = numero;
+      document.getElementById("botao").innerText = "Total " + numero;
     }
   </script>
 
